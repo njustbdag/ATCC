@@ -5,9 +5,9 @@
 This is the basic implementation of our submission in TNSM: **ATCC: Adversarial Training-Based Approach for Improving Log Anomaly Detection Model Robustness**.
 - [ATCC](#ATCC)
   * [Description](#description)
-  * [BaseModels](#Base Models)
+  * [Base Models](#BaseModels)
   * [Datasets](#datasets)
-  * [LogParser](#Log Parser)
+  * [Log Parser](#LogParser)
   * [Running](#Running)
 
 ## Description
@@ -43,7 +43,7 @@ We implemented `ATCC` on HDFS, BGL and Thunderbird from [LogHub](https://github.
 ## Log Parser
 We use the log parser [Drain](https://github.com/logpai/Drain3) to parse the raw logs and obtain log templates.
 
-### Running
+## Running
 Here are the steps to execute the ATCC method using the LogRobust model as an example:
 
 Step 0: Move the training preparation data to the corresponding dataset directory `./data/`. In this project, we provide the HDFS version of the data, including the semantic vectors for the three base models, log templates, as well as the training, validation, and test sets.
