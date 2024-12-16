@@ -5,9 +5,9 @@
 This is the basic implementation of our submission in TNSM: **ATCC: Adversarial Training-Based Approach for Improving Log Anomaly Detection Model Robustness**.
 - [ATCC](#ATCC)
   * [Description](#description)
-  * [Base-Models](#BaseModels)
+  * [Base-Models](#Base-Models)
   * [Datasets](#datasets)
-  * [Log-Parser](#LogParser)
+  * [Log-Parser](#Log-Parser)
   * [Running](#Running)
 
 ## Description
