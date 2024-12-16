@@ -1,0 +1,47 @@
+EventId,EventTemplate
+1,Receiving block [ID] src  [*] dest  /[IPANDPORT]
+2,BLOCK* NameSystem.allocateBlock  [*] [ID]
+3,PacketResponder [NUM] for block [ID] [*]
+4,Received block [ID] of size [NUM] from /[IP]
+5,BLOCK* NameSystem.addStoredBlock  blockMap updated  [IPANDPORT] is added to [ID] size [NUM]
+6,Received block [ID] src  [*] dest  /[IPANDPORT] of size [NUM]
+7,[IPANDPORT] Transmitted block [ID] to /[IPANDPORT]
+8,"[IPANDPORT] Starting thread to transfer block [ID] to [IPANDPORT], [IPANDPORT]"
+9,BLOCK* ask [IPANDPORT] to replicate [ID] to datanode(s) [IPANDPORT] [IPANDPORT]
+10,[IPANDPORT] Served block [ID] to /[IP]
+11,BLOCK* ask [IPANDPORT] to replicate [ID] to datanode(s) [IPANDPORT]
+12,[IPANDPORT] Starting thread to transfer block [ID] to [IPANDPORT]
+13,Verification succeeded for [ID]
+14,writeBlock [ID] received exception [*]
+15,PacketResponder [ID] [NUM] Exception [*]
+16,writeBlock [ID] received exception java.io.IOException  Could not read from stream
+17,Deleting block [ID] file [*]
+18,Receiving empty packet for block [ID]
+19,Exception in receiveBlock for block [ID] java.io.IOException  Connection reset by peer
+20,writeBlock [ID] received exception java.io.IOException  Connection reset by peer
+21,BLOCK* NameSystem.addStoredBlock  Redundant addStoredBlock request received for [ID] on [IPANDPORT] size [NUM]
+22,PacketResponder [ID] [NUM] Exception java.net.SocketTimeoutException  [NUM] millis timeout while waiting for channel to be ready for read. ch   java.nio.channels.SocketChannel[connected [*] remote=/[IPANDPORT]]
+23,PacketResponder [ID] [NUM] Exception java.io.InterruptedIOException  Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected [*] remote=/[IPANDPORT]]. [NUM] millis timeout left.
+24,Exception in receiveBlock for block [ID] [*]
+25,Changing block file offset of block [ID] from [NUM] to [NUM] meta file offset to [NUM]
+26,[IPANDPORT] Exception writing block [ID] to mirror [IPANDPORT]
+27,Exception in receiveBlock for block [ID] java.io.InterruptedIOException  Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected local=/[IPANDPORT] [*] [NUM] millis timeout left.
+28,writeBlock [ID] received exception java.io.InterruptedIOException  Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected local=/[IPANDPORT] [*] [NUM] millis timeout left.
+29,PacketResponder [ID] [NUM] Exception java.io.IOException  Broken pipe
+30,"writeBlock [ID] received exception java.io.IOException  Block [ID] is valid, and cannot be written to."
+31,[IPANDPORT] Failed to transfer [ID] to [IPANDPORT] got java.io.IOException  Connection reset by peer
+32,BLOCK* NameSystem.delete  [ID] is added to invalidSet of [IPANDPORT]
+33,Unexpected error trying to delete block [ID]. BlockInfo not found in volumeMap.
+34,BLOCK* NameSystem.addStoredBlock  addStoredBlock request received for [ID] on [IPANDPORT] size [NUM] But it does not belong to any file.
+35,[IPANDPORT] Got exception while serving [ID] to /[IP]
+36,PacketResponder [ID] [NUM] Exception java.io.IOException  [*] [*] [*] [*]
+37,Exception in receiveBlock for block [ID] java.net.SocketTimeoutException  [NUM] millis timeout while waiting for channel to be ready for write. ch   java.nio.channels.SocketChannel[connected local=/[IPANDPORT] remote=/[IPANDPORT]]
+38,writeBlock [ID] received exception java.net.SocketTimeoutException  [NUM] millis timeout while waiting for channel to be ready for [*] ch   java.nio.channels.SocketChannel[connected local=/[IPANDPORT] remote=/[IPANDPORT]]
+39,Reopen Block [ID]
+40,BLOCK* Removing block [ID] from neededReplications as it does not belong to any file.
+41,PendingReplicationMonitor timed out block [ID]
+42,writeBlock [ID] received exception java.io.IOException  [*] [*]
+43,PacketResponder [ID] [NUM] Exception java.io.InterruptedIOException  Interruped while waiting for IO on channel java.nio.channels.SocketChannel[closed]. [NUM] millis timeout left.
+44,writeBlock [ID] received exception java.net.NoRouteToHostException  No route to host
+45,Adding an already existing block [ID]
+46,Exception in receiveBlock for block [ID] java.io.IOException  Broken pipe
